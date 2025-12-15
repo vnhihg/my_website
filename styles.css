@@ -1,0 +1,685 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  @font-face {
+    font-family: "Brasika";
+    src: url("./public/fonts/brasika-display-trial.otf") format("truetype");
+    font-weight: normal;
+    font-feature-settings: 
+    "ss01" 0,  /* Stylistic Set 01 */
+    "ss02" 0,  /* Stylistic Set 02 */
+    "ss03" 0,  /* Stylistic Set 03 */
+    "swsh" 0,  /* Swashes */
+    "salt" 0;
+    font-variant-alternates: ;historical-forms;
+    font-style: normal;
+  }
+  
+
+  
+  body {
+    font-family: "Arial", sans-serif;
+    background-color: #f5f1e8;
+    color: #2c2c2c;
+    line-height: 1.6;
+  }
+  
+  /* Typography */
+  h1,
+  h2,
+  h3 {
+    font-family: "Brasika", serif;
+    font-weight: 700;
+  }
+  
+  /* Header and Navigation */
+  header {
+    background-color: #f5f1e8;
+    padding: 1.5rem 3rem;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .logo-icon {
+    color: #ff6b4a;
+    font-size: 2rem;
+  }
+  
+  .logo-text {
+    font-family: "Brasika", serif;
+    font-size: 1.8rem;
+    color: #2c2c2c;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #2c2c2c;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: #ff6b4a;
+  }
+  
+  .btn-get-in-touch {
+    background-color: #f4b741;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    color: #2c2c2c !important;
+    font-weight: 500;
+  }
+  
+  .btn-get-in-touch:hover {
+    background-color: #e5a830;
+    color: #2c2c2c !important;
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 3rem 3rem 0;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .hero-content {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+  }
+  
+  .hero-text {
+    flex: 1;
+  }
+  
+  .hero-title {
+    font-size: 4.5rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    font-family: "Brasika", serif;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 500px;
+  }
+  
+  .linkedin-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #ff6b4a;
+    color: white;
+    padding: 0.875rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .linkedin-btn:hover {
+    background-color: #e55a39;
+  }
+  
+  .linkedin-icon {
+    font-size: 1.2rem;
+  }
+  
+  .hero-image {
+    flex: 1;
+    position: relative;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+  
+  .contact-card {
+    background-color: #2c2c2c;
+    color: white;
+    padding: 2rem;
+    margin-top: -80px;
+    position: relative;
+    max-width: 400px;
+  }
+  
+  .contact-title {
+    font-family: "Brasika", serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .contact-icon {
+    font-size: 1.2rem;
+  }
+  
+  /* Experience Section */
+  .experience-section {
+    background-color: #3d5a4c;
+    color: white;
+    padding: 4rem 3rem;
+    margin-top: 3rem;
+  }
+  
+  .section-title {
+    font-family: "Brasika", serif;
+    font-size: 3rem;
+    color: #f4b741;
+    margin-bottom: 2rem;
+  }
+  
+  .timeline {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .timeline-item {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  
+  .timeline-marker {
+    width: 16px;
+    height: 16px;
+    background-color: #ff6b4a;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 0.5rem;
+    position: relative;
+  }
+  
+  .timeline-marker::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 16px;
+    width: 2px;
+    height: 100px;
+    background-color: #ff6b4a;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item:last-child .timeline-marker::after {
+    display: none;
+  }
+  
+  .timeline-content {
+    flex: 1;
+  }
+  
+  .timeline-date {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .timeline-title {
+    font-family: "Brasika", serif;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .timeline-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+  }
+  
+  /* Education Section */
+  .education-section {
+    background-color: #f4b741;
+    padding: 4rem 3rem;
+  }
+  
+  .education-section .section-title {
+    color: #2c2c2c;
+  }
+  
+  .education-content {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .education-item {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  
+  .education-marker {
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 0.5rem;
+    position: relative;
+  }
+  
+  .education-marker::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 16px;
+    width: 2px;
+    height: 200px;
+    background-color: white;
+    transform: translateX(-50%);
+  }
+  
+  .education-item:last-child .education-marker::after {
+    height: 50px;
+  }
+  
+  .education-details {
+    flex: 1;
+  }
+  
+  .education-date {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: #2c2c2c;
+  }
+  
+  .education-title {
+    font-family: "Brasika", serif;
+    font-size: 1.8rem;
+    margin-bottom: 0.75rem;
+    color: #2c2c2c;
+  }
+  
+  .education-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #2c2c2c;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  
+  .tag {
+    background-color: #2c2c2c;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+  }
+  
+  /* Skills Section */
+  .skills-section {
+    background-color: #3d5a4c;
+    color: white;
+    padding: 4rem 3rem;
+  }
+  
+  .skills-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+  
+  .technical-skills {
+    grid-column: 1 / -1;
+  }
+  
+  .technical-skills .section-title {
+    color: #f4b741;
+  }
+  
+  .skill-category {
+    margin-bottom: 2.5rem;
+  }
+  
+  .skill-category-title {
+    font-family: "Brasika";
+    font-size: 1.8rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .skill-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+  }
+  
+  .languages .section-title,
+  .hobbies .section-title {
+    color: #f4b741;
+  }
+  
+  .language-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .language-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .language-name {
+    font-family: "Brasika", serif;
+    font-size: 1.5rem;
+  }
+  
+  .language-level {
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+  
+  .hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .hobby-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .hobby-icon {
+    font-size: 3rem;
+    color: #f4b741;
+  }
+  
+  .hobby-name {
+    font-size: 1rem;
+  }
+  
+  /* Activities Section */
+  .activities-section {
+    background-color: #f5f1e8;
+    padding: 4rem 3rem;
+  }
+  
+  .activities-section .section-title {
+    color: #2c2c2c;
+  }
+  
+  .activity-item {
+    display: flex;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .activity-marker {
+    width: 16px;
+    height: 16px;
+    background-color: #ff6b4a;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 0.5rem;
+  }
+  
+  .activity-content {
+    flex: 1;
+  }
+  
+  .activity-date {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .activity-title {
+    font-family: "Brasika", serif;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .activity-description {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Page Content Styles */
+  .page-content {
+    min-height: calc(100vh - 100px);
+    padding: 4rem 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .page-title {
+    font-family: "Brasika", serif;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    color: #2c2c2c;
+  }
+  
+  .about-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  .subsection-title {
+    font-family: Brasika", serif;
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
+    color: #3d5a4c;
+  }
+  
+  /* Case Study Grid */
+  .case-study-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+  
+  .case-study-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .case-study-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .case-study-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .case-study-info {
+    padding: 1.5rem;
+  }
+  
+  .case-study-title {
+    font-family: "Brasika", serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #2c2c2c;
+  }
+  
+  .case-study-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  .case-study-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .case-study-tags .tag {
+    background-color: #3d5a4c;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  /* Contact Page */
+  .contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .contact-info-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info-card h3 {
+    font-family: "Brasika", serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #3d5a4c;
+  }
+  
+  .contact-info-card p {
+    font-size: 1rem;
+  }
+  
+  .contact-info-card a {
+    color: #ff6b4a;
+    text-decoration: none;
+  }
+  
+  .contact-info-card a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-cta {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .hero-content {
+      flex-direction: column;
+    }
+  
+    .skills-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .hobbies-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      padding: 1rem 1.5rem;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .nav-links {
+      gap: 1rem;
+    }
+  
+    .hero {
+      padding: 2rem 1.5rem 0;
+    }
+  
+    .hero-title {
+      font-size: 3rem;
+    }
+  
+    .experience-section,
+    .education-section,
+    .skills-section,
+    .activities-section {
+      padding: 3rem 1.5rem;
+    }
+  
+    .section-title {
+      font-size: 2.5rem;
+    }
+  
+    .page-content {
+      padding: 3rem 1.5rem;
+    }
+  
+    .page-title {
+      font-size: 2.5rem;
+    }
+  
+    .case-study-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .contact-info-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

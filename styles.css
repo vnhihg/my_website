@@ -7,17 +7,10 @@
   
   
   @font-face {
-    font-family: "Brasika";
-    src: url("./public/fonts/brasika-display-trial.otf") format("truetype");
-    font-weight: normal;
-    font-feature-settings: 
-    "ss01" 0,  /* Stylistic Set 01 */
-    "ss02" 0,  /* Stylistic Set 02 */
-    "ss03" 0,  /* Stylistic Set 03 */
-    "swsh" 0,  /* Swashes */
-    "salt" 0;
-    font-variant-alternates: ;historical-forms;
+    font-family: "ruigslay";
     font-style: normal;
+    font-weight: normal;
+    src: url("./public/fonts/ruigslay.regular.ttf") format('truetype');
   }
   
 
@@ -33,7 +26,7 @@
   h1,
   h2,
   h3 {
-    font-family: "Brasika", serif;
+    font-family: "ruigslay", serif;
     font-weight: 700;
   }
   
@@ -63,7 +56,7 @@
   }
   
   .logo-text {
-    font-family: "Brasika", serif;
+    font-family: "ruigslay", serif;
     font-size: 1.8rem;
     color: #2c2c2c;
   }
@@ -121,7 +114,7 @@
     font-size: 4.5rem;
     line-height: 1.1;
     margin-bottom: 1.5rem;
-    font-family: "Brasika", serif;
+    font-family: "ruigslay", serif;
   }
   
   .hero-description {
@@ -175,7 +168,7 @@
   }
   
   .contact-title {
-    font-family: "Brasika", serif;
+    font-family: "ruigslay", serif;
     font-size: 2rem;
     margin-bottom: 1.5rem;
   }
@@ -201,7 +194,7 @@
   }
   
   .section-title {
-    font-family: "Brasika", serif;
+    font-family: "ruigslay", serif;
     font-size: 3rem;
     color: #f4b741;
     margin-bottom: 2rem;
@@ -255,7 +248,7 @@
   }
   
   .timeline-title {
-    font-family: "Brasika", serif;
+    font-family: "ruigslay", serif;
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
   }
@@ -325,7 +318,7 @@
   }
   
   .education-title {
-    font-family: "Brasika", serif;
+    font-family: "ruigslay", serif;
     font-size: 1.8rem;
     margin-bottom: 0.75rem;
     color: #2c2c2c;
@@ -380,7 +373,7 @@
   }
   
   .skill-category-title {
-    font-family: "Brasika";
+    font-family: "ruigslay";
     font-size: 1.8rem;
     margin-bottom: 0.75rem;
   }
@@ -409,7 +402,7 @@
   }
   
   .language-name {
-    font-family: "Brasika", serif;
+    font-family: "ruigslay", serif;
     font-size: 1.5rem;
   }
   
@@ -477,7 +470,7 @@
   }
   
   .activity-title {
-    font-family: "Brasika", serif;
+    font-family: "ruigslay", serif;
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
   }
@@ -496,7 +489,7 @@
   }
   
   .page-title {
-    font-family: "Brasika", serif;
+    font-family: "ruigslay", serif;
     font-size: 3.5rem;
     margin-bottom: 2rem;
     color: #2c2c2c;
@@ -509,7 +502,7 @@
   }
   
   .subsection-title {
-    font-family: Brasika", serif;
+    font-family: ruigslay", serif;
     font-size: 2rem;
     margin: 2rem 0 1rem;
     color: #3d5a4c;
@@ -545,7 +538,7 @@
   }
   
   .case-study-title {
-    font-family: "Brasika", serif;
+    font-family: "ruigslay", serif;
     font-size: 1.5rem;
     margin-bottom: 0.75rem;
     color: #2c2c2c;
@@ -593,7 +586,7 @@
   }
   
   .contact-info-card h3 {
-    font-family: "Brasika", serif;
+    font-family: "ruigslay", serif;
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     color: #3d5a4c;
